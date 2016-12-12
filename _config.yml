@@ -1,0 +1,21 @@
+# Site settings
+name: Desqer
+title: Developers - Desqer
+email: dev@desqer.com
+description: ""
+baseurl: ""
+url: "http://dev.desqer.com"
+timezone: America/Sao_Paulo
+locale: pt_BR
+permalink: none
+
+facebook_publisher:
+facebook_author:
+
+facebook_pixel_id:
+google_analytics_id: UA-88859312-2
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-sitemap

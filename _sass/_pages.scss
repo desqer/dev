@@ -1,0 +1,255 @@
+/* 7 passos para aprender a programar */
+#sete-p {
+
+  .cover {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+
+  .headline {
+    width: 50%;
+    float: left;
+    margin-top: 70px;
+  }
+
+  .headline h1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .headline h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .headline h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 70px;
+  }
+
+  .description {
+    clear: both;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+    margin-bottom: 40px;
+  }
+
+  .description ul {
+    list-style: square inside;
+  }
+
+  .btn-ebook {
+    border: solid 2px;
+    border-radius: 7px;;
+    padding: 10px 15px;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+
+  .btn-subscribe {
+    border-radius: 7px;
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, #fcd745 0%, #ffb835 100%);
+    font-weight: bold;
+    color: #222;
+
+    &:hover {
+      background: linear-gradient(to top, #fcd745 0%, #ffb835 100%);
+      color: #000;
+    }
+  }
+
+  .wall {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 15px 25px;
+  }
+
+}
+
+.jumpstart-form,
+.sete-passos-form {
+  text-align: center;
+
+  h1 {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+
+  p {
+    font-size: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+  input[type=submit] {
+    padding: 15px 0;
+    background: linear-gradient(to bottom, #fcd745 0%, #ffb835 100%);
+    font-weight: bold;
+    color: #222;
+    width: 270px;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(to top, #fcd745 0%, #ffb835 100%);
+      color: #000;
+    }
+  }
+
+}
+
+#plc {
+  .videos {
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  .videos li {
+    display: inline;
+  }
+
+  .videos li a {
+    border: 1px solid;
+    padding: 20px;
+  }
+
+  .videos li a {
+    border-color: #bbb;
+    color: #aaa;
+  }
+
+  .videos li.active a {
+    border-color: $main-color;
+    color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+
+  .videos li.current a {
+    background-color: $main-color;
+    color: #fff;
+  }
+
+  .videos-container .videowrapper {
+    display: none;
+  }
+
+}
+
+#launch {
+  .btn-buy {
+    border-bottom: 2px solid;
+    border-radius: 7px;
+    padding: 15px 0;
+    background: linear-gradient(to bottom, #fcd745 0%, #ffb835 100%);
+    font-weight: bold;
+    color: #222;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+
+
+    &:hover {
+      border-bottom: 0;
+      border-top: 2px solid #fff;;
+      background: linear-gradient(to top, #fcd745 0%, #ffb835 100%);
+      color: #000;
+    }
+  }
+
+  .intro {
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 50px 30px;
+    background: #D0F0F2;
+  }
+
+  .intro h1 {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .intro h2 {
+    font-size: 20px;
+  }
+
+  .intro h3 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .laptop {
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .laptop .rails {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    margin-left: -151px;
+    z-index: 999;
+  }
+
+  .faq {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+  }
+  .faq h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .faq p {
+    font-size: 15px;
+  }
+
+  .faq p.question {
+    font-weight: bold;
+  }
+
+  .selo {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .list {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .list h1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .list h2 {
+    font-size: 20px;
+  }
+
+}
