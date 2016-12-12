@@ -80,11 +80,11 @@ li {
  * Links
  */
 a {
-    color: $main-color;
+    color: $link-color;
     text-decoration: none;
 
     &:hover {
-        color: $main-color-dark;
+        color: $link-color-dark;
     }
 }
 

@@ -19,6 +19,9 @@ $main-color:       #754E36;
 $main-color-light: lighten($main-color, 30%);
 $main-color-dark:  darken($main-color, 15%);
 
+$link-color:        #1aafd0;
+$link-color-dark:   darken($link-color, 15%);
+
 $minor-color:       #ee8b6b;
 $minor-color-light: lighten($minor-color, 30%);
 $minor-color-dark:  darken($minor-color, 15%);
