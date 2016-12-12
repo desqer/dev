@@ -64,7 +64,10 @@
     }
 }
 
-
+.languages {
+    float: right;
+    margin-top: 30px;
+}
 
 /**
  * Site footer
@@ -174,7 +177,10 @@
     font-weight: bold;
 }
 
-
+.post-description {
+    font-size: 24px;
+    color: $grey-color;
+}
 
 /**
  * Posts
@@ -187,7 +193,7 @@
     font-size: 36px;
     font-weight: bold;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 50px;
 
     @include media-query($on-laptop) {
         font-size: 32px;
@@ -196,6 +202,8 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    font-size: 18px;
+    line-height: 32px;
 
     h2 {
         font-size: 26px;
@@ -219,11 +227,6 @@
         @include media-query($on-laptop) {
             font-size: 16px;
         }
-    }
-
-    ul {
-      list-style: none;
-      margin-left: 0;
     }
 
     iframe {

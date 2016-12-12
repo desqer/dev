@@ -15,7 +15,14 @@ facebook_author:
 facebook_pixel_id:
 google_analytics_id: UA-88859312-2
 
+# i18n
+languages: ["en", "pt"]
+default_lang: "pt"
+exclude_from_localization: ["javascript", "images", "css", "assets"]
+parallel_localization: true
+
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-polyglot
