@@ -5,7 +5,7 @@ description: Comparação dos frameworks React Native, Ionic e Weex e como escol
 categories: mobile
 tags: [react native]
 lang: pt
-thumbnail: /assets/posts/react-native.png
+thumbnail: /assets/posts/frames.png
 ---
 
 Durante o desenvolvimento do aplicativo mobile do Desqer testamos algumas alternativas de frameworks para desenvolvimento mobile atuais. Estávamos em busca de uma plataforma que conseguisse cubrir todas funcionalidades que desejávamos sem perder performance. Alguns outros pontos como comunidade e a stack utilizada no desenvolvimento também foram fatores para a tomada de decisão. Basicamente, buscávamos algo que nos suprisse nos seguintes itens:
