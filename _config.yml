@@ -24,4 +24,5 @@ parallel_localization: true
 # Build settings
 markdown: kramdown
 gems:
+  - jekyll-sitemap
   - jekyll-polyglot
