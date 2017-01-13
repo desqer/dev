@@ -20,7 +20,7 @@ A estrutura de pastas do Desqer ficou da seguinte maneira:
 
 A pasta `app` fica reponsável por abrigar todo e qualquer código produzido pelo desenvolvedor, assim como componentes, serviços, etc.
 
-Um problema que me incomodou bastante desenvolvendo com o React Native, foi a incapacidade de referenciar os caminhos de uma forma mais organizada, ou seja, caso meu componente estiver localizado em `app/scenes/sign/components/component.js` e eu preciso importar um outro arquivo em `app/common/components` vou precisar descrever todo caminho relativo àquele componente, nesse caso ficaria:
+Um problema que me incomodou bastante desenvolvendo com o React Native, foi a incapacidade de referenciar os caminhos de uma forma mais organizada, ou seja, caso meu componente esteja localizado em `app/scenes/sign/components/component.js` e eu precise importar um outro arquivo em `app/common/components` vou ter que descrever todo caminho relativo àquele componente, nesse caso ficaria:
 
 ```javascript
 import { Component } from '../../../common/components/another.js'
