@@ -6,6 +6,7 @@ categories: mobile
 tags: [tutorial, react native]
 lang: pt
 thumbnail: icones-react-native.png
+author: diego
 ---
 
 Pelo fato do [React Native](https://facebook.github.io/react-native/) ainda estar em processo de desenvolvimento, algumas tarefas simples se tornam bem chatas. Uma delas é a manipulação de ícones na interface do usuário e seu posicionamento dentro de outros elementos. Nesse tutorial, vou ensinar como utilizar a biblioteca [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) para adicionar fontes de ícones ao projeto e posicioná-los dentro de um TextInput.
