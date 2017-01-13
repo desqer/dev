@@ -2,50 +2,55 @@
 layout: default
 comments: true
 ---
+
 <div class="post">
+    <header class="post-header">
 
+        <p class="post-meta">
+            {% for category in page.categories %}
+                <span class="post-category">{{ category }}</span>
+            {% endfor %}
 
+            {% for tag in page.tags %}
+                <span class="post-tag">{{ tag }}</span>
+            {% endfor %}
+        </p>
 
-  <header class="post-header">
+        <img class="post-thumbnail" src="/assets/posts/{{ page.thumbnail }}" title="{{ page.title }}" alt="{{ page.title }}" />
 
-    <p class="post-meta">
-      {% for category in page.categories %}
-        <span class="post-category">{{ category }}</span>
-      {% endfor %}
+        <h1 class="post-title">{{ page.title }}</h1>
 
-      {% for tag in page.tags %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
-    </p>
+        <p class="post-description">
+            {{ page.description }}
+        </p>
+    </header>
 
-    <img class="post-thumbnail" src="/assets/posts/{{ page.thumbnail }}" title="{{ page.title }}" alt="{{ page.title }}" />
+    <article class="post-content">
+        {{ content }}
+    </article>
 
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">
-      {{ page.description }}
-    </p>
-  </header>
-
-  <article class="post-content">
-
-
-    {{ content }}
-  </article>
+    {% assign author = site.data.authors[page.author] %}
+    {% if author %}
+    <span class="post-author">
+        Post por <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+    </span>
+    {% endif %}
 
     <div id="disqus_thread"></div>
-      <script>
-        var disqus_config = function () {
-          this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}";
-          this.page.identifier = "{{ page.id }}";
+    <script>
+        var disqus_config = function() {
+            this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}";
+            this.page.identifier = "{{ page.id }}";
         };
 
         (function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//desqer.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
+            var d = document,
+                s = d.createElement('script');
+            s.src = '//desqer.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
         })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </div>
